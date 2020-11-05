@@ -1,0 +1,791 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01磁盘 · ansible newer</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="qipaqiu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02查看磁盘.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    文件管理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../文件管理/ls.html">
+            
+                <a href="../文件管理/ls.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Ls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../文件管理/创建和删除目录.html">
+            
+                <a href="../文件管理/创建和删除目录.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    创建和删除目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../文件管理/打包压缩.html">
+            
+                <a href="../文件管理/打包压缩.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    打包压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../文件管理/查看文件.html">
+            
+                <a href="../文件管理/查看文件.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    查看文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    用户管理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../用户管理/su与sudo的区别.html">
+            
+                <a href="../用户管理/su与sudo的区别.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    su与sudo的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../用户管理/文件与文件目录.html">
+            
+                <a href="../用户管理/文件与文件目录.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    文件与文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../用户管理/用户和用户组.html">
+            
+                <a href="../用户管理/用户和用户组.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    用户和用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    磁盘管理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="01磁盘.html">
+            
+                <a href="01磁盘.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    01磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02查看磁盘.html">
+            
+                <a href="02查看磁盘.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    02查看磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03挂载磁盘.html">
+            
+                <a href="03挂载磁盘.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    03挂载磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="04逻辑盘扩展.html">
+            
+                <a href="04逻辑盘扩展.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    04逻辑盘扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="05交换分区.html">
+            
+                <a href="05交换分区.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    05交换分区
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    SHELL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../SHELL/00交互.html">
+            
+                <a href="../SHELL/00交互.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    00交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../SHELL/06shell函数.html">
+            
+                <a href="../SHELL/06shell函数.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    06shell函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../SHELL/07系统函数.html">
+            
+                <a href="../SHELL/07系统函数.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    07系统函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../SHELL/08脚本控制.html">
+            
+                <a href="../SHELL/08脚本控制.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    08脚本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../SHELL/09定时脚本.html">
+            
+                <a href="../SHELL/09定时脚本.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    09定时脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../SHELL/10为脚本加锁.html">
+            
+                <a href="../SHELL/10为脚本加锁.html">
+            
+                    
+                        <b>1.5.6.</b>
+                    
+                    10为脚本加锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../SHELL/使用循环判断位置参数.html">
+            
+                <a href="../SHELL/使用循环判断位置参数.html">
+            
+                    
+                        <b>1.5.7.</b>
+                    
+                    使用循环判断位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../SHELL/判断语句case.html">
+            
+                <a href="../SHELL/判断语句case.html">
+            
+                    
+                        <b>1.5.8.</b>
+                    
+                    判断语句case
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../SHELL/判断语句if.html">
+            
+                <a href="../SHELL/判断语句if.html">
+            
+                    
+                        <b>1.5.9.</b>
+                    
+                    判断语句if
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../SHELL/循环语句for.html">
+            
+                <a href="../SHELL/循环语句for.html">
+            
+                    
+                        <b>1.5.10.</b>
+                    
+                    循环语句for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../SHELL/循环语句while.html">
+            
+                <a href="../SHELL/循环语句while.html">
+            
+                    
+                        <b>1.5.11.</b>
+                    
+                    循环语句while
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../复制与移动目录.html">
+            
+                <a href="../复制与移动目录.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    复制与移动目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../文本编辑器.html">
+            
+                <a href="../文本编辑器.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    文本编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../防火墙.html">
+            
+                <a href="../防火墙.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    防火墙
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >01磁盘</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;">&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</h2>
+<p>&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#x4ECB;&#x7ECD;linux&#x4F7F;&#x7528;&#x6700;&#x5E7F;&#x6CDB;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x2014;&#x2014;ext4</p>
+<p>ext4&#x5305;&#x62EC;&#x56DB;&#x90E8;&#x5206;</p>
+<ul>
+<li>&#x8D85;&#x7EA7;&#x5757;&#xFF0C;&#x5728;ext4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5F00;&#x59CB;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x8BB0;&#x5F55;&#x5206;&#x533A;&#x5305;&#x542B;&#x4E86;&#x591A;&#x5C11;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;</li>
+<li>&#x8D85;&#x7EA7;&#x5757;&#x526F;&#x672C;&#xFF0C;&#x5BF9;&#x8D85;&#x7EA7;&#x5757;&#x8FDB;&#x884C;&#x5907;&#x4EFD;&#xFF0C;&#x6062;&#x590D;&#x6570;&#x636E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6062;&#x590D;&#x8D85;&#x7EA7;&#x5757;&#x8FDB;&#x884C;&#x6062;&#x590D;&#x6570;&#x636E;&#x3002;&#x56E0;&#x4E3A;&#x6570;&#x636E;&#x5757;&#x7684;&#x5185;&#x5BB9;&#x5E76;&#x6CA1;&#x6709;&#x88AB;&#x8986;&#x76D6;&#x6389;&#x3002;</li>
+<li>i&#x8282;&#x70B9;&#xFF0C;&#x8BB0;&#x5F55;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x79F0;&#x548C;&#x5927;&#x5C0F;&#xFF0C;&#x6587;&#x4EF6;&#x7684;&#x7F16;&#x53F7;&#x548C;&#x6743;&#x9650;&#x3002;&#x4F46;&#x662F;&#x6587;&#x4EF6;&#x540D;&#x548C;&#x7F16;&#x53F7;&#x5E76;&#x6CA1;&#x6709;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;i&#x8282;&#x70B9;&#x91CC;&#x9762;&#x3002;&#x6587;&#x4EF6;&#x70B9;&#x662F;&#x653E;&#x5728;&#x6587;&#x4EF6;&#x7684;&#x7236;&#x4EB2;i&#x8282;&#x70B9;&#x91CC;&#x9762;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x5757;&#xFF0C;&#x8BB0;&#x5F55;&#x6570;&#x636E;&#x3002;&#x540C;&#x4E2A;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x5212;&#x5206;&#x6210;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x5757;&#xFF0C;&#x6302;&#x8F7D;&#x5230;&#x540C;&#x4E00;&#x4E2A;i&#x8282;&#x70B9;&#x4E2D;&#x3002;</li>
+</ul>
+<p>&#x901A;&#x8FC7;i&#x8282;&#x70B9;&#xFF0C;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x660E;&#x767D;&#x4E86;&#x4E3A;&#x4EC0;&#x4E48;mv&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8FD9;&#x4E48;&#x5FEB;&#xFF0C;mv&#x6539;&#x540D;&#x53EA;&#x662F;&#x6539;&#x52A8;&#x4E86;i&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;</p>
+<p><img src="../img/image-20201015164415991.png" alt="image-20201015164415991"></p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;i&#x8282;&#x70B9;&#x53D1;&#x751F;&#x4E86;&#x53D8;&#x5316;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x6587;&#x4EF6;&#x5C31;&#x4E0D;&#x662F;&#x539F;&#x6587;&#x4EF6;&#x4E86;&#x3002;</p>
+<p>vim&#x64CD;&#x4F5C;&#x7684;&#x8BDD;&#xFF0C;&#x662F;vim&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;swp&#x7248;&#x672C;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x5176;&#x5B9E;&#x662F;&#x5BF9;&#x8FD9;&#x4E2A;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x64CD;&#x4F5C;&#x5B8C;&#x4EE5;&#x540E;&#xFF0C;&#x4F1A;&#x5C06;swp&#x6587;&#x4EF6;&#x547D;&#x540D;&#x4E3A;&#x539F;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x8FD9;&#x6837;&#x5B50;&#x4E5F;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;vim&#x64CD;&#x4F5C;&#x4EE5;&#x540E;i&#x8282;&#x70B9;&#x4F1A;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x3002;</p>
+<p><img src="../img/image-20201015164759044.png" alt="image-20201015164759044"></p>
+<p>&#x6240;&#x4EE5;&#x5220;&#x9664;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x5B9E;&#x662F;&#x5C06;i&#x8282;&#x70B9;&#x4E0E;&#x6587;&#x4EF6;&#x540D;&#x65AD;&#x5F00;&#xFF0C;&#x53EA;&#x8981;&#x627E;&#x5230;i&#x8282;&#x70B9;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x80FD;&#x6062;&#x590D;&#x6587;&#x4EF6;&#x3002;&#x9632;&#x6B62;&#x8BEF;&#x5220;&#x7684;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x5C31;&#x662F;&#x901A;&#x8FC7;ln&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x786C;&#x8FDE;&#x63A5;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x5F97;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x6307;&#x5411;&#x540C;&#x4E00;&#x4E2A;i&#x8282;&#x70B9;&#x3002;&#x8FD9;&#x6837;&#x5B50;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x662F;&#x7B49;&#x540C;&#x7684;&#x3002;    &#x6240;&#x4EE5;ln&#x662F;&#x4E0D;&#x80FD;&#x8DE8;&#x8D8A;&#x5206;&#x533A;&#x7684;&#x3002;</p>
+<pre><code>ln filea fileb # &#x4E3A;fileb&#x521B;&#x5EFA;&#x786C;&#x94FE;&#x63A5;filea
+ln -s filea fileb # &#x4E3A;fileb&#x521B;&#x5EFA;&#x8F6F;&#x94FE;&#x63A5;filea&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;
+</code></pre><h3 id="ext4&#x6587;&#x4EF6;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;">ext4&#x6587;&#x4EF6;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;</h3>
+<p>ext4&#x72EC;&#x6709;&#xFF0C;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x8BFB;&#x5199;&#x6743;&#x9650;&#x3002;</p>
+<p>&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;</p>
+<pre><code>getfacl afile
+</code></pre><p><img src="../img/image-20201015165756651.png" alt="image-20201015165756651"></p>
+<p>&#x8D4B;&#x4E88;&#x6743;&#x9650;</p>
+<pre><code>setfacl -m u:user1:r afile # &#x4E3A;user1&#x7528;&#x6237;&#x7EC4;&#x8D4B;&#x4E88;&#x8BFB;&#x7684;&#x6743;&#x9650;
+setfacl -m g:group1:rw afile # &#x4E3A;group1&#x7528;&#x6237;&#x7EC4;&#x8D4B;&#x4E88;&#x8BFB;&#x548C;&#x5199;&#x7684;&#x6743;&#x9650;
+</code></pre><h2 id="raid-&#x78C1;&#x76D8;&#x9635;&#x5217;">RAID &#x78C1;&#x76D8;&#x9635;&#x5217;</h2>
+<table>
+<thead>
+<tr>
+<th>raid&#x7EA7;&#x522B;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>raid 0</td>
+<td>&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x62C6;&#x6210;&#x4E24;&#x4EFD;&#xFF0C;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#x62C6;&#x6210;&#x4E24;&#x4EFD;&#xFF0C;&#x5B58;&#x5230;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x63D0;&#x9AD8;200%&#x7684;&#x8BFB;&#x53D6;&#x901F;&#x5EA6;</td>
+</tr>
+<tr>
+<td>raid 1</td>
+<td>&#x955C;&#x50CF;&#x65B9;&#x5F0F; &#xFF0C;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#x4F1A;&#x81EA;&#x52A8;&#x5907;&#x4EFD;&#x5230;&#x7B2C;&#x4E8C;&#x5757;&#x78C1;&#x76D8;&#xFF0C;&#x63D0;&#x9AD8;200%&#x7684;&#x53EF;&#x9760;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x4E24;&#x5757;&#x78C1;&#x76D8;&#x91CC;&#x9762;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#x53EF;&#x4EE5;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td>raid 5</td>
+<td>&#x81F3;&#x5C11;&#x6709;&#x4E09;&#x5757;&#x786C;&#x76D8;&#xFF0C;&#x4E24;&#x5757;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x7B2C;&#x4E09;&#x5757;&#x5B58;&#x6821;&#x9A8C;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>raid 10</td>
+<td>0&#x548C;1&#x7684;&#x7EC4;&#x5408;   &#x56DB;&#x5757;&#x786C;&#x76D8;  &#x4E24;&#x5757;&#x505A;raid1 &#x4E24;&#x5757;&#x505A;raid1 .&#x4E24;&#x5757;&#x505A;&#x4E86;raid1&#x7684;&#x78C1;&#x76D8;&#x62FF;&#x51FA;&#x6765;&#x505A;raid0</td>
+</tr>
+</tbody>
+</table>
+<p>&#x901A;&#x8FC7;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x5B8C;&#x6210;&#xFF0C;&#x901A;&#x8FC7;raid&#x63A7;&#x5236;&#x5668;&#x6765;&#x8FDB;&#x884C;raid&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x8F6F;&#x4EF6;raid&#xFF0C;cpu&#x5F00;&#x9500;&#x975E;&#x5E38;&#x5927;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; dsx2016.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-11-04 16:27:33
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="02查看磁盘.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 02查看磁盘">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01磁盘","level":"1.4.1","depth":2,"next":{"title":"02查看磁盘","level":"1.4.2","depth":2,"path":"磁盘管理/02查看磁盘.md","ref":"磁盘管理/02查看磁盘.md","articles":[]},"previous":{"title":"磁盘管理","level":"1.4","depth":1,"ref":"","articles":[{"title":"01磁盘","level":"1.4.1","depth":2,"path":"磁盘管理/01磁盘.md","ref":"磁盘管理/01磁盘.md","articles":[]},{"title":"02查看磁盘","level":"1.4.2","depth":2,"path":"磁盘管理/02查看磁盘.md","ref":"磁盘管理/02查看磁盘.md","articles":[]},{"title":"03挂载磁盘","level":"1.4.3","depth":2,"path":"磁盘管理/03挂载磁盘.md","ref":"磁盘管理/03挂载磁盘.md","articles":[]},{"title":"04逻辑盘扩展","level":"1.4.4","depth":2,"path":"磁盘管理/04逻辑盘扩展.md","ref":"磁盘管理/04逻辑盘扩展.md","articles":[]},{"title":"05交换分区","level":"1.4.5","depth":2,"path":"磁盘管理/05交换分区.md","ref":"磁盘管理/05交换分区.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","chapter-fold","code","splitter","-lunr","-search","search-pro","tbfed-pagefooter","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy dsx2016.com 2019","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"qipaqiu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ansible newer","gitbook":"*"},"file":{"path":"磁盘管理/01磁盘.md","mtime":"2020-11-04T08:27:33.272Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-05T03:12:59.310Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

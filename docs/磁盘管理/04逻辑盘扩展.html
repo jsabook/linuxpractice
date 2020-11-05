@@ -1,0 +1,842 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>04逻辑盘扩展 · ansible newer</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="qipaqiu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05交换分区.html" />
+    
+    
+    <link rel="prev" href="03挂载磁盘.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    文件管理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../文件管理/ls.html">
+            
+                <a href="../文件管理/ls.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Ls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../文件管理/创建和删除目录.html">
+            
+                <a href="../文件管理/创建和删除目录.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    创建和删除目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../文件管理/打包压缩.html">
+            
+                <a href="../文件管理/打包压缩.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    打包压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../文件管理/查看文件.html">
+            
+                <a href="../文件管理/查看文件.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    查看文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    用户管理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../用户管理/su与sudo的区别.html">
+            
+                <a href="../用户管理/su与sudo的区别.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    su与sudo的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../用户管理/文件与文件目录.html">
+            
+                <a href="../用户管理/文件与文件目录.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    文件与文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../用户管理/用户和用户组.html">
+            
+                <a href="../用户管理/用户和用户组.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    用户和用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    磁盘管理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="01磁盘.html">
+            
+                <a href="01磁盘.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    01磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02查看磁盘.html">
+            
+                <a href="02查看磁盘.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    02查看磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03挂载磁盘.html">
+            
+                <a href="03挂载磁盘.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    03挂载磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="04逻辑盘扩展.html">
+            
+                <a href="04逻辑盘扩展.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    04逻辑盘扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="05交换分区.html">
+            
+                <a href="05交换分区.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    05交换分区
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    SHELL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../SHELL/00交互.html">
+            
+                <a href="../SHELL/00交互.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    00交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../SHELL/06shell函数.html">
+            
+                <a href="../SHELL/06shell函数.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    06shell函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../SHELL/07系统函数.html">
+            
+                <a href="../SHELL/07系统函数.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    07系统函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../SHELL/08脚本控制.html">
+            
+                <a href="../SHELL/08脚本控制.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    08脚本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../SHELL/09定时脚本.html">
+            
+                <a href="../SHELL/09定时脚本.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    09定时脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../SHELL/10为脚本加锁.html">
+            
+                <a href="../SHELL/10为脚本加锁.html">
+            
+                    
+                        <b>1.5.6.</b>
+                    
+                    10为脚本加锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../SHELL/使用循环判断位置参数.html">
+            
+                <a href="../SHELL/使用循环判断位置参数.html">
+            
+                    
+                        <b>1.5.7.</b>
+                    
+                    使用循环判断位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../SHELL/判断语句case.html">
+            
+                <a href="../SHELL/判断语句case.html">
+            
+                    
+                        <b>1.5.8.</b>
+                    
+                    判断语句case
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../SHELL/判断语句if.html">
+            
+                <a href="../SHELL/判断语句if.html">
+            
+                    
+                        <b>1.5.9.</b>
+                    
+                    判断语句if
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../SHELL/循环语句for.html">
+            
+                <a href="../SHELL/循环语句for.html">
+            
+                    
+                        <b>1.5.10.</b>
+                    
+                    循环语句for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../SHELL/循环语句while.html">
+            
+                <a href="../SHELL/循环语句while.html">
+            
+                    
+                        <b>1.5.11.</b>
+                    
+                    循环语句while
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../复制与移动目录.html">
+            
+                <a href="../复制与移动目录.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    复制与移动目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../文本编辑器.html">
+            
+                <a href="../文本编辑器.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    文本编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../防火墙.html">
+            
+                <a href="../防火墙.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    防火墙
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >04逻辑盘扩展</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x903B;&#x8F91;&#x5377;lvm&#x7BA1;&#x7406;">&#x903B;&#x8F91;&#x5377;LVM&#x7BA1;&#x7406;</h2>
+<p>&#x4E00;&#x4E2A;&#x7269;&#x7406;&#x8BBE;&#x5907;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7269;&#x7406;&#x5377;&#x3001;&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x5757;&#x786C;&#x76D8;&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7269;&#x7406;&#x5377;&#x3002;</p>
+<p>&#x903B;&#x8F91;&#x5377;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x6BD4;&#x7269;&#x7406;&#x5377;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#x3002;&#x7531;&#x4E8E;&#x7CFB;&#x7EDF;&#x662F;&#x653E;&#x5728;&#x903B;&#x8F91;&#x5377;&#x4E0A;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6269;&#x5C55;&#x903B;&#x8F91;&#x5377;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E0D;&#x5173;&#x673A;&#x6269;&#x5C55;&#x5377;&#x3002;</p>
+<p>&#x903B;&#x8F91;&#x5377;&#x662F;&#x5C06;&#x51E0;&#x4E2A;&#x7269;&#x7406;&#x5377;&#x5708;&#x5230;&#x4E00;&#x8D77;&#xFF0C;&#x5C06;&#x591A;&#x4E2A;&#x5927;&#x5C0F;&#x4E0D;&#x901A;&#x7684;&#x7269;&#x7406;&#x5377;&#xFF08;&#x786C;&#x76D8;&#xFF09;&#x62FC;&#x63A5;&#x5230;&#x4E00;&#x8D77;&#xFF0C;&#x62FC;&#x63A5;&#x6210;&#x903B;&#x8F91;&#x7EC4;&#x3002;&#x7136;&#x540E;&#x6309;&#x7167;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5207;&#x5272;&#x6210;&#x903B;&#x8F91;&#x5377;</p>
+<h2 id="&#x521B;&#x5EFA;&#x6D41;&#x7A0B;">&#x521B;&#x5EFA;&#x6D41;&#x7A0B;</h2>
+<p><img src="../img/image-20201104174426071.png" alt="image-20201104174426071"></p>
+<h2 id="&#x521B;&#x5EFA;&#x7269;&#x7406;&#x5377;physical-volume">&#x521B;&#x5EFA;&#x7269;&#x7406;&#x5377;(physical volume)</h2>
+<p>pv&#x64CD;&#x4F5C;</p>
+<pre><code class="lang-shell">[root@localhost ~]# pvcreate /dev/sdb /dev/sdc /dev/sdd
+  Physical volume &quot;/dev/sdb&quot; successfully created.
+  Physical volume &quot;/dev/sdc&quot; successfully created.
+  Physical volume &quot;/dev/sdd&quot; successfully created.
+</code></pre>
+<p>&#x67E5;&#x770B;&#x7269;&#x7406;&#x5377;</p>
+<pre><code class="lang-shell">[root@localhost ~]# pvs
+  PV         VG     Fmt  Attr PSize   PFree
+  /dev/sda2  centos lvm2 a--  &lt;39.00g 4.00m
+  /dev/sdb          lvm2 ---    5.00g 5.00g
+  /dev/sdc          lvm2 ---    5.00g 5.00g
+  /dev/sdd          lvm2 ---    5.00g 5.00g
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6709;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x7EC4;centos&#xFF0C;&#x65B0;&#x7684;&#x4E09;&#x4E2A;&#x7269;&#x7406;&#x5377;&#x6CA1;&#x6709;&#x6240;&#x5C5E;&#x7684;&#x903B;&#x8F91;&#x7EC4;&#x3002;</p>
+<h2 id="&#x521B;&#x5EFA;&#x5377;&#x7EC4;volume-group">&#x521B;&#x5EFA;&#x5377;&#x7EC4;(volume group)</h2>
+<p>&#x4E3A;&#x65B0;&#x589E;&#x52A0;&#x7684;&#x4E09;&#x4E2A;&#x7269;&#x7406;&#x5377;&#x521B;&#x5EFA;&#x6240;&#x5C5E;&#x7684;&#x5377;&#x7EC4;</p>
+<pre><code class="lang-bash">[root@localhost ~]<span class="hljs-comment"># vgcreate vg1 /dev/sdb /dev/sdc /dev/sdd</span>
+  Volume group <span class="hljs-string">&quot;vg1&quot;</span> successfully created
+</code></pre>
+<p>&#x67E5;&#x770B;&#x5377;&#x7EC4;</p>
+<pre><code class="lang-shell">[root@localhost ~]# vgs
+  VG     #PV #LV #SN Attr   VSize   VFree
+  centos   1   2   0 wz--n- &lt;39.00g   4.00m
+  vg1      3   0   0 wz--n- &lt;14.99g &lt;14.99g
+</code></pre>
+<p>&#x5176;&#x4E2D;pv&#xFF0C;&#x662F;&#x8FD9;&#x4E2A;&#x903B;&#x8F91;&#x7EC4;&#x6709;&#x51E0;&#x4E2A;&#x7269;&#x7406;&#x5377;&#x3002;lv&#x5219;&#x662F;&#x8FD9;&#x4E2A;&#x903B;&#x8F91;&#x7EC4;&#x6709;&#x51E0;&#x4E2A;&#x903B;&#x8F91;&#x5377;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;pv&#x4E0D;&#x80FD;&#x52A0;&#x5165;&#x5230;&#x4E24;&#x4E2A;&#x5377;&#x7EC4;&#x3002;</p>
+<h2 id="&#x521B;&#x5EFA;&#x903B;&#x8F91;&#x5377;logical--volume">&#x521B;&#x5EFA;&#x903B;&#x8F91;&#x5377;(logical  volume)</h2>
+<p>&#x521B;&#x5EFA;&#x597D;&#x903B;&#x8F91;&#x7EC4;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x5BF9;&#x903B;&#x8F91;&#x7EC4;&#x8FDB;&#x884C;&#x5207;&#x5272;&#xFF0C;&#x5207;&#x5272;&#x51FA;&#x903B;&#x8F91;&#x5377;&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#x3002;</p>
+<pre><code class="lang-bash">[root@localhost ~]<span class="hljs-comment"># lvcreate -L 100M -n lv1 vg1</span>
+  Logical volume <span class="hljs-string">&quot;lv1&quot;</span> created.
+</code></pre>
+<p><code>-L</code>&#x6307;&#x7684;&#x662F;&#x903B;&#x8F91;&#x5377;&#x5927;&#x5C0F;</p>
+<p><code>-n</code> &#x903B;&#x8F91;&#x5377;&#x7684;&#x540D;&#x79F0;</p>
+<pre><code>lvcreate -L &#x903B;&#x8F91;&#x5377;&#x5927;&#x5C0F; -n &#x903B;&#x8F91;&#x5377;&#x540D;&#x79F0; &#x5377;&#x7EC4;
+</code></pre><p>&#x67E5;&#x770B;&#x6548;&#x679C;</p>
+<pre><code class="lang-bash">[root@localhost ~]<span class="hljs-comment"># lvs</span>
+  LV   VG     Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  root centos -wi-ao----  36.99g                                                
+  swap centos -wi-ao----   2.00g                                                
+  lv1  vg1    -wi<span class="hljs-_">-a</span>----- 100.00m
+</code></pre>
+<h2 id="&#x4F7F;&#x7528;&#x903B;&#x8F91;&#x5377;">&#x4F7F;&#x7528;&#x903B;&#x8F91;&#x5377;</h2>
+<p>&#x5C06;<code>lv1</code>&#x770B;&#x6210;&#x4E00;&#x4E2A;&#x5206;&#x533A;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-bash">[root@localhost ~]<span class="hljs-comment"># mkfs.ext4 /dev/vg1/lv1</span>
+mke2fs 1.42.9 (28-Dec-2013)
+&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6807;&#x7B7E;=
+OS <span class="hljs-built_in">type</span>: Linux
+&#x5757;&#x5927;&#x5C0F;=1024 (<span class="hljs-built_in">log</span>=0)
+&#x5206;&#x5757;&#x5927;&#x5C0F;=1024 (<span class="hljs-built_in">log</span>=0)
+Stride=0 blocks, Stripe width=0 blocks
+25688 inodes, 102400 blocks
+5120 blocks (5.00%) reserved <span class="hljs-keyword">for</span> the super user
+&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5757;=1
+Maximum filesystem blocks=33685504
+13 block groups
+8192 blocks per group, 8192 fragments per group
+1976 inodes per group
+Superblock backups stored on blocks:
+        8193, 24577, 40961, 57345, 73729
+
+Allocating group tables: &#x5B8C;&#x6210;
+&#x6B63;&#x5728;&#x5199;&#x5165;inode&#x8868;: &#x5B8C;&#x6210;
+Creating journal (4096 blocks): &#x5B8C;&#x6210;
+Writing superblocks and filesystem accounting information: &#x5B8C;&#x6210;
+
+[root@localhost ~]<span class="hljs-comment"># mkdir /mnt/test</span>
+[root@localhost ~]<span class="hljs-comment"># mount -t ext4 -o rw  /dev/vg1/lv1 /mnt/test/</span>
+</code></pre>
+<h2 id="&#x6269;&#x5C55;&#x7CFB;&#x7EDF;&#x76D8;">&#x6269;&#x5C55;&#x7CFB;&#x7EDF;&#x76D8;</h2>
+<p>&#x6269;&#x5C55;&#x7CFB;&#x7EDF;&#x76D8;&#xFF0C;&#x5176;&#x5B9E;&#x4E5F;&#x5C31;&#x662F;&#x6269;&#x5C55;&#x903B;&#x8F91;&#x5377;&#x3002;&#x56E0;&#x4E3A;&#x662F;&#x6269;&#x5145;&#x903B;&#x8F91;&#x5377;</p>
+<h3 id="&#x6269;&#x5C55;&#x5377;&#x7EC4;">&#x6269;&#x5C55;&#x5377;&#x7EC4;</h3>
+<p>&#x56E0;&#x4E3A;&#x5377;&#x7EC4;&#x4E2D;&#x6CA1;&#x6709;&#x7A7A;&#x95F4;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5148;&#x5C06;&#x7269;&#x7406;&#x5377;&#x6269;&#x5C55;&#x5230;&#x903B;&#x8F91;&#x7EC4;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-shell">[root@localhost ~]# vgextend centos /dev/sdd
+  Volume group &quot;centos&quot; successfully extended
+</code></pre>
+<h3 id="&#x6269;&#x5C55;&#x903B;&#x8F91;&#x5377;">&#x6269;&#x5C55;&#x903B;&#x8F91;&#x5377;</h3>
+<pre><code class="lang-shell">[root@localhost ~]# lvextend -L +2G /dev/centos/root
+  Size of logical volume centos/root changed from 36.99 GiB (9470 extents) to 38.99 GiB (9982 extents).
+  Logical volume centos/root successfully resized.
+</code></pre>
+<p>&#x67E5;&#x770B;&#x6269;&#x5C55;&#x60C5;&#x51B5;</p>
+<pre><code class="lang-shell">[root@localhost ~]# lvs
+  LV   VG     Attr       LSize  Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  root centos -wi-ao---- 38.99g
+</code></pre>
+<p>&#x5DF2;&#x7ECF;&#x589E;&#x52A0;&#x4E86;2G&#x3002;</p>
+<h3 id="&#x5237;&#x65B0;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;">&#x5237;&#x65B0;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</h3>
+<p>&#x5982;&#x679C;&#x662F;ext4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x90A3;&#x4E48;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x67E5;&#x770B;&#x3002;&#x5982;&#x679C;&#x662F;xfs&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x662F;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5237;&#x65B0;&#x7684;&#x3002;</p>
+<pre><code>xfs_grows /dev/centos/root
+</code></pre><p>&#x5373;<code>xfs_grows &#x903B;&#x8F91;&#x5377;&#x540D;&#x79F0;</code> </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; dsx2016.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-11-04 17:57:43
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03挂载磁盘.html" class="navigation navigation-prev " aria-label="Previous page: 03挂载磁盘">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05交换分区.html" class="navigation navigation-next " aria-label="Next page: 05交换分区">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"04逻辑盘扩展","level":"1.4.4","depth":2,"next":{"title":"05交换分区","level":"1.4.5","depth":2,"path":"磁盘管理/05交换分区.md","ref":"磁盘管理/05交换分区.md","articles":[]},"previous":{"title":"03挂载磁盘","level":"1.4.3","depth":2,"path":"磁盘管理/03挂载磁盘.md","ref":"磁盘管理/03挂载磁盘.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","chapter-fold","code","splitter","-lunr","-search","search-pro","tbfed-pagefooter","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy dsx2016.com 2019","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"qipaqiu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ansible newer","gitbook":"*"},"file":{"path":"磁盘管理/04逻辑盘扩展.md","mtime":"2020-11-04T09:57:43.437Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-05T03:12:59.310Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
